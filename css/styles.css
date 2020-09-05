@@ -486,6 +486,11 @@ mark,
 }
 
 .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.img-divider {
   max-width: 100%;
   height: auto;
 }
@@ -3910,6 +3915,7 @@ input[type=button].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  text-align:center;
 }
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
@@ -4274,7 +4280,7 @@ input[type=button].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(0, 0, 0, 0.7);
@@ -4289,14 +4295,14 @@ input[type=button].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 255,255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .navbar-light .navbar-text a {
   color: rgba(0, 0, 0, 0.9);
@@ -6342,6 +6348,34 @@ button.bg-dark:focus {
 .d-inline-flex {
   display: inline-flex !important;
 }
+
+@media only screen
+
+	and (min-device-width: 360px)
+
+	and (max-device-width: 740px)
+
+	and (-webkit-min-device-pixel-ratio: 4) {
+
+	#nav-brand-unit {
+		display: none;
+	}
+}
+
+@media only screen
+
+  and (min-device-width: 375px)
+
+  and (max-device-width: 667px)
+
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	#nav-brand-unit {
+		display: none;
+	}
+
+}
+
 
 @media (min-width: 576px) {
   .d-sm-none {
@@ -10058,7 +10092,7 @@ border:0px solid blue;
   color: #fff;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
+  color: rgba(255, 255, 255, 0.75);
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
