@@ -4066,6 +4066,12 @@ input[type=button].btn-block {
   background-size: 100% 100%;
 }
 
+@media (max-width: 992px) {
+	#nav-brand-unit {
+		display: none;
+	}
+}
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid,
@@ -6349,32 +6355,6 @@ button.bg-dark:focus {
   display: inline-flex !important;
 }
 
-@media only screen
-
-	and (min-device-width: 360px)
-
-	and (max-device-width: 740px)
-
-	and (-webkit-min-device-pixel-ratio: 4) {
-
-	#nav-brand-unit {
-		display: none;
-	}
-}
-
-@media only screen
-
-  and (min-device-width: 375px)
-
-  and (max-device-width: 667px)
-
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-	#nav-brand-unit {
-		display: none;
-	}
-
-}
 
 
 @media (min-width: 576px) {
